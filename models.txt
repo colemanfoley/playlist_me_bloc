@@ -7,7 +7,7 @@ User
 Category
 	name
 
-Request
+PlaylistRequest
 	category_id
 	user_id
 	title
