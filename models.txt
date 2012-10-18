@@ -1,0 +1,21 @@
+User
+	name
+	email
+	password
+	bio
+
+Category
+	name
+
+Request
+	category_id
+	user_id
+	title
+	body
+	published_date
+
+Suggestion
+	category_id
+	name
+	email
+	body
