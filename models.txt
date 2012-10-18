@@ -16,6 +16,7 @@ PlaylistRequest
 
 Suggestion
 	category_id
+	user_id
 	name
 	email
 	body
