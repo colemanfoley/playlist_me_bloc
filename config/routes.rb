@@ -1,4 +1,14 @@
 PlaylistMe::Application.routes.draw do
+  get "users/index"
+
+  get "users/show"
+
+  get "users/new"
+
+  get "welcome/index"
+
+  get "welcome/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
