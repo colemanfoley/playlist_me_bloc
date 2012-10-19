@@ -1,2 +1,39 @@
-<h1>Welcome#about</h1>
-<p>Find me in app/views/welcome/about.html.erb</p>
+<body>
+  <div id = "wrapper"></div>
+  <div id="header">Playlist Me</div>
+
+  <div id="navigation">
+
+
+      <ul>
+        <li>Request a Playlist</li>
+        <li>Suggest a Playlist</li>
+        <ul>
+          <li>Hip-Hop</li>
+          <li>Pop</li>
+          <li>Classic Rock</li>
+        </ul>
+
+      </ul>
+
+      </ul>
+
+  </div>
+
+  <div id="content">
+    <div id="content_text">
+    Do you need help making a playlist? Say "Great 90's Dance Songs"? Just ask!<br>
+    You can also help other people make playlists.
+    </div>
+
+
+  </div>
+
+    <div id="footer">
+      <ul id = "footernav">
+          <li><%= link_to "About", welcome_about_path %></li>   <li><a href="/contact">Contact</a></li>
+      </ul>
+
+  </div>
+
+</body>
