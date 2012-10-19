@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>PlaylistMe</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>PlaylistMe</title>
+  </head>
 
-<%= yield %>
-
-</body>
+  <body>
+    <%= yield%>
+  </body>
 </html>
