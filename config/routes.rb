@@ -1,4 +1,5 @@
 PlaylistMe::Application.routes.draw do
+  resources :playlistrequests
   get "playlistrequests/index"
 
   get "playlistrequests/show"
