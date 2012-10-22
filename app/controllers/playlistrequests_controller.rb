@@ -6,5 +6,6 @@ class PlaylistrequestsController < ApplicationController
   end
 
   def new
+    @playlistrequest = PlaylistRequest.new
   end
 end
