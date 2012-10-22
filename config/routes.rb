@@ -1,4 +1,10 @@
 PlaylistMe::Application.routes.draw do
+  get "playlistrequests/index"
+
+  get "playlistrequests/show"
+
+  get "playlistrequests/new"
+
   get "users/index"
 
   get "users/show"
