@@ -1,5 +1,6 @@
 class PlaylistrequestsController < ApplicationController
   def index
+    @playlistrequests = PlaylistRequest.all
   end
 
   def show
