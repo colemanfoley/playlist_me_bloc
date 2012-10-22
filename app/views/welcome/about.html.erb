@@ -1,18 +1,7 @@
 <body>
-  <div id = "wrapper"></div>
-  <div id="header"><%= link_to "Playlist Me", root_path %></div>
+  <%= render "shared/header" %>
 
-  <div id="navigation">
-      <ul>
-        <li>Request a Playlist</li>
-        <li>Suggest a Playlist</li>
-        <ul>
-          <li>Hip-Hop</li>
-          <li>Pop</li>
-          <li>Classic Rock</li>
-        </ul>
-      </ul>
-  </div>
+  <%= render "shared/navbar" %>
 
   <div id="content">
     <div id="content_text">
@@ -22,11 +11,7 @@
 
   </div>
 
-    <div id="footer">
-      <ul id = "footernav">
-          <li><%= link_to "About", welcome_about_path %></li>   <li><a href="/contact">Contact</a></li>
-      </ul>
+  <%= render "shared/footer" %>
 
-  </div>
 
 </body>
