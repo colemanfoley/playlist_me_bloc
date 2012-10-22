@@ -2,18 +2,7 @@
   <div id = "wrapper"></div>
   <div id="header">Playlist Me</div>
 
-  <div id="navigation">
-      <ul>
-        <li><%= link_to "Request a Playlist", new_playlistrequest_path %></li>
-        <li><%= link_to "Respond to a Request", playlistrequests_path %></li>
-        <ul>
-          <li>Hip-Hop</li>
-          <li>Pop</li>
-          <li>Classic Rock</li>
-        </ul>
-      </ul>
-  </div>
-
+  <%= render "shared/navbar" %>
   <div id="content">
     <div id="content_text">
     Do you need help making a playlist? Say "Great 90's Dance Songs"? Just ask!<br>
@@ -21,10 +10,6 @@
     </div>
   </div>
 
-    <div id="footer">
-      <ul id = "footernav">
-          <li><%= link_to "About", welcome_about_path %></li>   <li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
+  <%= render "shared/footer" %>
 
 </body>
