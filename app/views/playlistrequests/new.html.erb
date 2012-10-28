@@ -5,10 +5,30 @@
 
   <div id="content">
     <div id="content_text">
-    What are you looking for?
+      <%= form_for @playlistrequest, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
+        <p>Title</p>
+        <%= f.text_field :title %></br>
+
+        <p>Describe in more detail what you're looking for.</p>
+        <%= f.text_area :body, :size => "60x12" %> 
+
+        <p>What genre(s), if any?</p>
+        <%= check_box_tag(:rap) %>
+        <%= label_tag(:rap, "Rap") %>
+
+        <%= check_box_tag(:r_and_b) %>
+        <%= label_tag(:r_and_b, "R&B") %>
+
+        <%= check_box_tag(:r_and_b) %>
+        <%= label_tag(:r_and_b, "Classic Rock") %></br>
+
+        <%= f.submit "Playlist Me!" %>
+      <% end %>
     </div>
   </div>
 
   <%= render "shared/footer" %>
 
 </body>
+
+
