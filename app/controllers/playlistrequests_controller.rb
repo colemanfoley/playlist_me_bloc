@@ -9,4 +9,8 @@ class PlaylistrequestsController < ApplicationController
   def new
     @playlistrequest = PlaylistRequest.new
   end
+
+  def create
+    @playlistrequest = PlaylistRequest.new(params[:user])
+  end
 end
