@@ -1,2 +1,31 @@
-<h1>PlaylistRequests#new</h1>
-<p>Find me in app/views/playlist_requests/new.html.erb</p>
+<body>
+  <%= render "shared/header" %>
+  <%= render "shared/navbar" %>
+
+  <div id="content">
+    <div id="content_text">
+      <%= form_for @playlistrequest do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title %></br>
+
+        <%= f.label :body %>
+        <%= f.text_area :body, :size => "60x12" %> 
+
+        <p>What genre(s), if any?</p>
+        <%= check_box_tag(:rap) %>
+        <%= label_tag(:rap, "Rap") %>
+
+        <%= check_box_tag(:r_and_b) %>
+        <%= label_tag(:r_and_b, "R&B") %>
+
+        <%= check_box_tag(:r_and_b) %>
+        <%= label_tag(:r_and_b, "Classic Rock") %></br>
+
+        <%= f.submit "Playlist Me!" %>
+      <% end %>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
+
+</body>
