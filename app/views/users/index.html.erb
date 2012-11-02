@@ -1,2 +1,17 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<body>
+  <%= render "shared/header" %>
+  <%= render "shared/navbar" %>
+
+  <div id="content">
+    <div id="content_text">
+        <%= @users.each do |user| %>
+          <div class="user">
+              <%= user.name %>
+          </div>
+          <% end %>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
+
+</body>

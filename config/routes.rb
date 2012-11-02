@@ -8,7 +8,7 @@ PlaylistMe::Application.routes.draw do
   get "playlist_requests/edit"
 
   resources :playlist_requests
-
+  resources :users
   get "users/index"
 
   get "users/show"

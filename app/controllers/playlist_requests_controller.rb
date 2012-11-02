@@ -9,6 +9,7 @@ class PlaylistRequestsController < ApplicationController
 
   def show
     @playlistrequest = PlaylistRequest.find(params[:id])
+    @suggestion = Suggestion.new
   end
 
   def edit
