@@ -5,8 +5,15 @@
   <div id="content">
     <div id="content_text">
       <%= form_for @user do |f| %>
-        <%= f.label :name %>
+        <%= f.label :name %></br>
         <%= f.text_field :name %></br>
+        Password</br>
+        <%= password_field_tag(:password) %></br>
+        <%= f.label :email %></br>
+        <%= f.text_field :email %></br>
+
+        <%= f.label :bio %></br>
+        <%= f.text_area :bio %></br>
 
         <%= f.submit "Create user" %>
       <% end %>

@@ -6,7 +6,8 @@
     <div id="content_text">
         <%= @playlistrequests.each do |playlistrequest| %>
           <div class="playlistrequest">
-              <%= playlistrequest.title %>
+              <%= link_to playlistrequest.title, playlistrequest %>
+
           </div>
           <% end %>
     </div>
