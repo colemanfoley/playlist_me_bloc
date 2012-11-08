@@ -1,4 +1,6 @@
 PlaylistMe::Application.routes.draw do
+  devise_for :users
+
   resources :playlistrequests
   get "playlistrequests/index"
 
