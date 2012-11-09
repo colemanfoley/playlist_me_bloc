@@ -1,5 +1,8 @@
 PlaylistMe::Application.routes.draw do
   devise_for :users
+  resources :playlist_requests
+  resources :users
+
   get "playlist_requests/index"
 
   get "playlist_requests/new"
@@ -9,8 +12,6 @@ PlaylistMe::Application.routes.draw do
   get "playlist_requests/edit"
 
 
-  resources :playlist_requests
-  resources :users
   get "users/index"
 
   get "users/show"
