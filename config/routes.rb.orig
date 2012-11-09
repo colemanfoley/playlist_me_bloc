@@ -1,13 +1,17 @@
 PlaylistMe::Application.routes.draw do
+
   devise_for :users
+
+  resources :playlistrequests
+
   get "playlist_requests/index"
+
 
   get "playlist_requests/new"
 
   get "playlist_requests/show"
 
   get "playlist_requests/edit"
-
 
   resources :playlist_requests
   resources :users
