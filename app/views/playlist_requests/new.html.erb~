@@ -1,0 +1,26 @@
+<body>
+  <%= render "shared/header" %>
+  <%= render "shared/navbar" %>
+
+  <div id="content">
+    <div id="content_text">
+      <%= form_for @playlistrequest do |f| %>
+        <%= f.label :title %></br>
+        <%= f.text_field :title %></br>
+
+        <%= f.label :body %>
+        <%= f.text_area :body, :size => "60x12" %>
+
+        <p>What genre(s), if any?</p>
+          <%= radio_button_tag(:genre, "rap") %>
+          <%= label_tag(:genre_rap, "Rap") %>
+          <%= radio_button_tag(:genre, "rock") %>
+          <%= label_tag(:genre_rock, "Rock") %>
+        </br>
+        <%= f.submit "Playlist Me!" %>
+      <% end %>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
+</body>
