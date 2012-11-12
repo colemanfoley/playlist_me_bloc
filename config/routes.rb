@@ -1,26 +1,6 @@
 PlaylistMe::Application.routes.draw do
   devise_for :users
   resources :playlist_requests
-  resources :users
-
-  get "playlist_requests/index"
-
-  get "playlist_requests/new"
-
-  get "playlist_requests/show"
-
-  get "playlist_requests/edit"
-
-
-  get "users/index"
-
-  get "users/show"
-
-  get "users/new"
-
-  get "welcome/index"
-
-  get "welcome/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
