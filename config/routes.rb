@@ -1,6 +1,7 @@
 PlaylistMe::Application.routes.draw do
   devise_for :users
   resources :playlist_requests
+	resources :welcome
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
