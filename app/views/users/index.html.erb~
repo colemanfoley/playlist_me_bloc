@@ -1,0 +1,17 @@
+<body>
+  <%= render "shared/header" %>
+  <%= render "shared/navbar" %>
+
+  <div id="content">
+    <div id="content_text">
+        <%= @users.each do |user| %>
+          <div class="user">
+              <%= user.name %>
+          </div>
+          <% end %>
+    </div>
+  </div>
+
+  <%= render "shared/footer" %>
+
+</body>

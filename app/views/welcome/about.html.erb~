@@ -1,0 +1,16 @@
+<body>
+  <%= render "shared/header" %>
+
+  <%= render "shared/navbar" %>
+
+  <div id="content">
+    <div id="content_text">
+      I made this because I thought other people could do a better job making custom playlists for me than machines could. And I knew that people love making music recommendations, but have a hard time finding people who want to hear their music recommendations.
+    </div>
+
+  </div>
+
+  <%= render "shared/footer" %>
+
+
+</body>
