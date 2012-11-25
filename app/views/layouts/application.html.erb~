@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/style.css" />
+		<%= javascript_include_tag "application" %>
     <title>PlaylistMe</title>
   </head>
 
@@ -32,7 +33,9 @@
 	</div>
 
 	<div id="content">
+		<div id="content_text">
 			<%= yield %>
+		</div>
 	</div>
 
 

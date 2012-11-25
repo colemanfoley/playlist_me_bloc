@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-var content_text = document.getElementById("content_text");
-var test_attribute = content_text.getAttribute("margin-left");
-//alert(test_attribute);
-alert("Hi");
-document.write("Hi");
+
+
+$(document).ready(function(){
+	alert(document.getElementById("header").getAttribute("id"));
+});
