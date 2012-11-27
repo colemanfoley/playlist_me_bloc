@@ -4,6 +4,14 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
 		<%= javascript_include_tag "application" %>
     <title>PlaylistMe</title>
+	  <script type="text/javascript" charset="utf-8">
+	    $(function() {
+	      $("#alert").click(function() {
+	        alert(this.getAttribute("data-message"));
+	        return false;
+	      })
+	    })
+	  </script>
   </head>
 
   <body>
@@ -34,6 +42,7 @@
 
 	<div id="content">
 		<div id="content_text">
+			<a href="#" id="alert" data-message="This alert was made using unobtrusive JavaScript.">Click Here to see an alert pop up.</a></br>
 			<%= yield %>
 		</div>
 	</div>
