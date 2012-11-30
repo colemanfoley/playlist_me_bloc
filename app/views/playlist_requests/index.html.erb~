@@ -1,18 +1,6 @@
-<body>
-  <%= render "shared/header" %>
-  <%= render "shared/navbar" %>
+<%= @playlistrequests.each do |playlistrequest| %>
+  <div class="playlistrequest">
+      <%= link_to playlistrequest.title, playlistrequest %>
 
-  <div id="content">
-    <div id="content_text">
-        <%= @playlistrequests.each do |playlistrequest| %>
-          <div class="playlistrequest">
-              <%= link_to playlistrequest.title, playlistrequest %>
-
-          </div>
-         <% end %>
-    </div>
   </div>
-
-  <%= render "shared/footer" %>
-
-</body>
+ <% end %>
