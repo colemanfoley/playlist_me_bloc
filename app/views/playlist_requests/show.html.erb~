@@ -1,10 +1,1 @@
 <%= @playlistrequest.title %>
-
-
-
-<!--<%= form_for @playlistrequest do |f| %>
-	<%= f.fields_for :suggestions do %></br>
-		<%= f.label :body, "Suggestion" %><br />
-		<%= f.text_area :body %><br />
-	<% end %>
-<% end %>-->

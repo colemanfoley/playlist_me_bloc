@@ -1,14 +1,14 @@
 class PlaylistRequestsController < ApplicationController
   def index
-    @playlistrequests = PlaylistRequest.all
+    @playlist_requests = PlaylistRequest.all
   end
 
   def new
-    @playlistrequest = PlaylistRequest.new
+    @playlist_request = PlaylistRequest.new
   end
 
   def show
-    @playlistrequest = PlaylistRequest.find(params[:id])
+    @playlist_request = PlaylistRequest.find(params[:id])
     #@suggestion = Suggestion.new
 		#@suggestion.playlistrequest_id = params[:id]
   end
@@ -17,9 +17,9 @@ class PlaylistRequestsController < ApplicationController
   end
 
   def create
-    @playlistrequest = PlaylistRequest.new(params[:playlist_request])
-    if @playlistrequest.save
-      redirect_to @playlistrequest
+    @playlist_request = PlaylistRequest.new(params[:playlist_request])
+    if @playlist_request.save
+      redirect_to @playlist_request
     else
       render :edit
     end

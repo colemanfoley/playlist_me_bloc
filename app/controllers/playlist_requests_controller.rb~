@@ -9,8 +9,8 @@ class PlaylistRequestsController < ApplicationController
 
   def show
     @playlistrequest = PlaylistRequest.find(params[:id])
-    @suggestion = Suggestion.new
-		@suggestion.playlistrequest_id = params[:id]
+    #@suggestion = Suggestion.new
+		#@suggestion.playlistrequest_id = params[:id]
   end
 
   def edit

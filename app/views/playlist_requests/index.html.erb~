@@ -1,6 +1,7 @@
-<%= @playlistrequests.each do |playlistrequest| %>
-  <div class="playlistrequest">
-      <%= link_to playlistrequest.title, playlistrequest %>
-
+<% @playlist_requests.each do |playlist_request| %>
+  <div class="playlist_request">
+      <%= link_to playlist_request.title, playlist_request %></br>
+			<%= playlist_request.body %>
+			</br>
   </div>
  <% end %>
