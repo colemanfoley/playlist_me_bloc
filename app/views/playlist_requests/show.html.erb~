@@ -1,1 +1,14 @@
-<%= @playlistrequest.title %>
+<%= @playlist_request.title %>
+
+<%= form_for @suggestion do |f| %>
+  <%= f.label :body, "Suggestion"  %>
+  <%= f.text_area :body %>
+  <%= f.submit "Add suggestion" %>
+	<%= f.hidden_field :playlist_request_id, value: @playlist_request.id %>
+<% end %>
+
+<% @playlist_request.suggestions.each do |suggestion| %>
+  <%= suggestion.user.name || suggestion.user.email %><br/>
+  <%= suggestion.body %></br>
+	<%= button_to "destroy", @suggestion, :method => :destroy %>
+<% end %>

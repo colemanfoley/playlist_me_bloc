@@ -2,6 +2,7 @@ PlaylistMe::Application.routes.draw do
 	devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
 	get "welcome/about"
   resources :playlist_requests, :welcome
+	resources :suggestions, :only => [:create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

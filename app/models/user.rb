@@ -9,4 +9,5 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :bio, :email, :name, :password
   has_many :Playlist_Requests
+	has_many :suggestions
 end

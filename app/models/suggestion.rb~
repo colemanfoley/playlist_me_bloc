@@ -1,6 +1,6 @@
 class Suggestion < ActiveRecord::Base
-  belongs_to :category
   belongs_to :user
-	belongs_to :playlistrequest
-  attr_accessible :body, :email, :name, :playlistrequest_id, :title
+	belongs_to :playlist_request
+  attr_accessible :body
+
 end

@@ -1,4 +1,5 @@
 class PlaylistRequestsController < ApplicationController
+	before_filter :authenticate_user!
   def index
     @playlist_requests = PlaylistRequest.all
   end
@@ -9,7 +10,7 @@ class PlaylistRequestsController < ApplicationController
 
   def show
     @playlist_request = PlaylistRequest.find(params[:id])
-    #@suggestion = Suggestion.new
+    @suggestion = Suggestion.new
 		#@suggestion.playlistrequest_id = params[:id]
   end
 

@@ -7,7 +7,7 @@ class CreateSuggestions < ActiveRecord::Migration
 			
       t.timestamps
     end
-    add_index :suggestions, :playlist_request_id
+    add_index :suggestions, :playlist_requests_id
     add_index :suggestions, :user_id
   end
 end

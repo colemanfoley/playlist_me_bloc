@@ -33,16 +33,14 @@ ActiveRecord::Schema.define(:version => 20121108230003) do
   add_index "playlist_requests", ["user_id"], :name => "index_playlist_requests_on_user_id"
 
   create_table "suggestions", :force => true do |t|
-    t.integer  "category_id"
-    t.string   "name"
-    t.string   "email"
+    t.integer  "playlist_request_id"
     t.text     "body"
     t.integer  "user_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
-  add_index "suggestions", ["category_id"], :name => "index_suggestions_on_category_id"
+  add_index "suggestions", ["playlist_request_id"], :name => "index_suggestions_on_playlist_request_id"
   add_index "suggestions", ["user_id"], :name => "index_suggestions_on_user_id"
 
   create_table "users", :force => true do |t|
